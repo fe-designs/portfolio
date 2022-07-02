@@ -8,6 +8,7 @@
     --base-color: #005acd;
     --secondry-color: #6dd7fd;
     --title-color: #000000;
+    --bg-color: #eee;
 }
 /*==================== BASE ====================*/
 * {
@@ -29,7 +30,8 @@ body {
 }
 
 main {
-    background: #eee;
+    background: var(--bg-color);
+    transition: .5s;
     /* padding: 1rem; */
 }
 
@@ -52,7 +54,6 @@ ul {
 
 .section__title {
     font-size: 3rem;
-    color: #000;
 }
   
 .section__subtitle {
@@ -131,6 +132,14 @@ body::-webkit-scrollbar-thumb {
     box-shadow: -9px -9px 9px 0 rgba(255, 255, 255, 0.4),
     9px 9px 9px 0 rgba(0,0,0,0.25);
 }
+
+/*==================== Color Mode ====================*/
+body.darkMode {
+    color: white;
+    --bg-color: #121212;
+    --title-color: #ffffff;
+}
+
   
 /*==================== NAV BAR ====================*/
 .navbar {
