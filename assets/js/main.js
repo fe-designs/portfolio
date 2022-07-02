@@ -11,6 +11,24 @@ sr.reveal(".social__coming", {delay: 500})
 sr.reveal(".contact__container", {delay: 400})
 sr.reveal(".learning")
 
+/*==================== Color Mode ====================*/
+// try implementing changing var method
+const colorModeBtn = document.querySelectorAll('.color__mode__btn')
+let currentMode = 1
+function changeColorMode(){
+    const bodyTheme = document.getElementById('body-pd')
+    if (currentMode == 1){
+        currentMode = 2
+        bodyTheme.classList.add('darkMode')
+    }
+    else{
+        currentMode = 1
+        bodyTheme.classList.remove('darkMode')
+    }
+}
+
+colorModeBtn.forEach(c => c.addEventListener('click', changeColorMode))
+
 
 /*==================== ACHIEVMENT TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
