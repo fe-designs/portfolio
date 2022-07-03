@@ -464,6 +464,9 @@ body.darkMode {
     justify-content: center
 }
 
+.achievment__active .achievment__title,.achievment__active .achievment__icon{
+    color: var(--base-color);
+}
 
 /*==================== LEARNING ====================*/
 .learning__contents {
