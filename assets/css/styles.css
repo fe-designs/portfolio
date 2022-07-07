@@ -133,13 +133,55 @@ body::-webkit-scrollbar-thumb {
     9px 9px 9px 0 rgba(0,0,0,0.25);
 }
 
-/*==================== Color Mode ====================*/
+/*==================== COLOR MODE ====================*/
 body.darkMode {
     color: white;
     --bg-color: #121212;
     --title-color: #ffffff;
 }
 
+/*==================== LOADER ====================*/
+
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    overflow: hidden;
+    background-color: var(--base-color);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.loader__logo {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    animation: loader_logo 1.5s infinite;
+}
+
+.loader__text {
+    font-size: 1.5rem;
+}
+
+.loader__logo, .loader__text {
+    font-weight: 900;
+}
+
+@keyframes loader_logo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
   
 /*==================== NAV BAR ====================*/
 .navbar {
@@ -467,7 +509,6 @@ body.darkMode {
 .achievment__active .achievment__title,.achievment__active .achievment__icon{
     color: var(--base-color);
 }
-
 /*==================== LEARNING ====================*/
 .learning__contents {
     display: none;
