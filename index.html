@@ -18,6 +18,31 @@
         <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body id="body-pd">
+        <!--==================== LOADER ====================-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <div class="loader">
+            <h1 class="loader__logo">FE</h1>
+            <span class="loader__text">Loading... Please wait!</span>
+        </div>
+        <script>
+            $(window).on('load', function(){
+                $(".loader").slideUp(300);
+                $("main").fadeIn(0);
+                $("header").fadeIn(0);
+                /*==================== SCROLL REVEAL ====================*/
+                let sr = ScrollReveal({
+                    duration: 2500,
+                    distance: "80px",
+                })
+
+                sr.reveal(".home__content", {origin: "top"})
+                sr.reveal(".home__buttons", {delay: 500})
+                sr.reveal(".home__social", {delay: 500})
+                sr.reveal(".social__coming", {delay: 500})
+                sr.reveal(".contact__container", {delay: 400})
+                sr.reveal(".learning")
+            });
+        </script>
         <!--==================== NAV ====================-->
         <header class="header" id="header">
             <nav class="navbar" id="nav">
@@ -406,8 +431,7 @@
                 </div>
             </section>
             <!--==================== BLOG ====================-->
-            <link rel="stylesheet" href="blog/blog.css
-            ">
+            <link rel="stylesheet" href="blog/blog.css">
             <section class="blog section" id="blog">
                 <h2 class="section__title">My Blog</h2>
                 <span class="section__subtitle">Writings about various topics</span>
@@ -767,6 +791,9 @@
                                 </li>
                                 <li class="source__item">
                                     <a href="https://www.youtube.com/watch?v=mPGi1IHQxFM" target="_blank" class="source">youtube.com/watch?v=mPGi1IHQxFM</a>
+                                </li>
+                                <li class="source__item">
+                                    <a href="https://www.youtube.com/watch?v=0lyngYIozro" target="_blank" class="source">youtube.com/watch?v=0lyngYIozro</a>
                                 </li>
                             </ul>
 
