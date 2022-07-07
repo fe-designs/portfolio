@@ -1,16 +1,3 @@
-/*==================== SCROLL REVEAL ====================*/
-let sr = ScrollReveal({
-    duration: 2500,
-    distance: "80px",
-})
-
-sr.reveal(".home__content", {origin: "top"})
-sr.reveal(".home__buttons", {delay: 500})
-sr.reveal(".home__social", {delay: 500})
-sr.reveal(".social__coming", {delay: 500})
-sr.reveal(".contact__container", {delay: 400})
-sr.reveal(".learning")
-
 /*==================== Color Mode ====================*/
 // try implementing changing var method
 const colorModeBtn = document.querySelectorAll('.color__mode__btn')
