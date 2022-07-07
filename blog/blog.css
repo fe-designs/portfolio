@@ -1,0 +1,88 @@
+
+
+
+
+
+/*==================== COVERS ====================*/
+.blog__covers {
+    padding-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog__cover {
+    justify-self: center;
+    transition: .2s;
+}
+
+.blog__page1 {
+    background: #005acd;
+    border-radius: 2%;
+    width: 250px;
+    height: 400px;
+}
+.blog__page2 { 
+    background: white;
+    /* background-image: url('Blue Mask.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    border-radius: 2%;
+    margin-top: -400px;
+    width: 270px;
+    height: 400px;
+    transform: rotate(-5deg);
+    transform-origin: bottom left;
+}
+
+.blog__cover__issue {
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    position: absolute;
+}
+
+.blog__cover__title {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    position: absolute;
+}
+
+.blog__cover__logo {
+    color: #005acd;
+    font-size: 6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.blog__date, .blog__tags {
+    text-align: center;
+    padding-top: 1rem;
+}
+.blog__tags {
+    margin-bottom: 2rem;
+}
+
+.blog__cover:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+}
+/*==================== FOOTER ====================*/
+.blog__footer {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #005acd;
+    transition: .3s;
+}
+.blog__footer a:visited {
+    text-decoration: none;
+    color: #005acd;
+}
+.blog__footer a:hover {    
+    color: #6dd7fd;
+}
+.blog__footer:hover {
+    transform: scale(120%);
+}
