@@ -300,9 +300,6 @@ body.darkMode {
 .home__container{
     display: grid;
     grid-template-columns: 10% 5% 70% 15%;
-    /* column-gap: 10px;
-    row-gap: 10px; */
-    gap: 10px;
 }
 
 .home__content {
