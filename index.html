@@ -25,7 +25,7 @@
             <span class="loader__text">Loading... Please wait!</span>
         </div>
         <script>
-            $(window).on('click', function(){
+            $(window).on('load', function(){
                 $("body").removeClass("preload");
                 $(".loader").slideUp(300);
                 $("main").fadeIn(0);
