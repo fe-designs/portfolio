@@ -1,4 +1,15 @@
+/*==================== SCROLL BAR ====================*/
+.blog__page1__clicked::-webkit-scrollbar {
+    width: 0.5rem;
+}
 
+.blog__page1__clicked::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+  
+.blog__page1__clicked::-webkit-scrollbar-thumb {
+    background: white;
+}
 
 
 
@@ -9,6 +20,10 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.blog__clicked {
+    grid-template-columns: 1fr;
+}
+
 .blog__cover {
     justify-self: center;
     transition: .2s;
@@ -16,9 +31,12 @@
 
 .blog__page1 {
     background: #005acd;
+    color: white;
+    padding: 20px;
     border-radius: 2%;
     width: 250px;
     height: 400px;
+    transition: .5s;
 }
 .blog__page2 { 
     background: white;
@@ -32,9 +50,27 @@
     height: 400px;
     transform: rotate(-5deg);
     transform-origin: bottom left;
+    transition: .5s;
+}
+
+.blog__page1__clicked {
+    width: 700px;
+    height: 800px;
+    transform: translateX(350px);
+    overflow: auto;
+    cursor: text;
+}
+
+.blog__page2__clicked {
+    width: 700px;
+    height: 800px;
+    margin-top: -800px;
+    transform: perspective(800px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-180deg) translateX(-350px);
+    cursor: default;
 }
 
 .blog__cover__issue {
+    color: black;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, 10%);
@@ -42,6 +78,7 @@
 }
 
 .blog__cover__title {
+    color: black;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
@@ -57,6 +94,17 @@
     position: absolute;
 }
 
+.blog__cover__notice {
+    display: none;
+    color: #005acd;
+    font-size: 6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(-1, 1);
+    position: absolute;
+}
+
+
 .blog__date, .blog__tags {
     text-align: center;
     padding-top: 1rem;
@@ -69,6 +117,22 @@
     transform: translateY(-25px);
     cursor: pointer;
 }
+
+.blog__return__button {
+    color: #005acd;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.blog__return__button:hover {
+    transform: translateX(-1rem);
+}
+
 /*==================== FOOTER ====================*/
 .blog__footer {
     text-align: center;
