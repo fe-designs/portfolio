@@ -26,10 +26,10 @@
         </div>
         <script>
             $(window).on('load', function(){
-                $("body").removeClass("preload");
                 $(".loader").slideUp(300);
                 $("main").fadeIn(0);
                 $("header").fadeIn(0);
+                $("body").removeClass("preload");
                 /*==================== SCROLL REVEAL ====================*/
                 let sr = ScrollReveal({
                     duration: 2500,
@@ -441,7 +441,7 @@
                     <div class="blog__controls"></div>
                 </div>
                 <div class="blog__covers grid">
-                    <div class="blog__cover">
+                    <div class="blog__cover" onclick="location.href='#blog1';">
                         <div class="blog__page1"></div>
                         <div class="blog__page2">
                             <h2 class="blog__cover__title">Title 1</h1>
@@ -452,7 +452,7 @@
                         <div class="blog__date">2022</div>
                         <div class="blog__tags">Tech</div>
                     </div>
-                    <div class="blog__cover">
+                    <div class="blog__cover" onclick="location.href='#blog2';">
                         <div class="blog__page1"></div>
                         <div class="blog__page2">
                             <h2 class="blog__cover__title">Title 2</h1>
@@ -463,7 +463,7 @@
                         <div class="blog__date">2022</div>
                         <div class="blog__tags">Tech</div>
                     </div>
-                    <div class="blog__cover">
+                    <div class="blog__cover" onclick="location.href='#blog3';">
                         <div class="blog__page1"></div>
                         <div class="blog__page2">
                             <h2 class="blog__cover__title">Title 3</h1>
@@ -474,7 +474,7 @@
                         <div class="blog__date">2022</div>
                         <div class="blog__tags">Tech</div>
                     </div>
-                    <div class="blog__cover">
+                    <div class="blog__cover" onclick="location.href='#blog4';">
                         <div class="blog__page1"></div>
                         <div class="blog__page2">
                             <h2 class="blog__cover__title">Title 4</h1>
@@ -485,7 +485,7 @@
                         <div class="blog__date">2022</div>
                         <div class="blog__tags">Tech</div>
                     </div>
-                    <div class="blog__cover">
+                    <div class="blog__cover" onclick="location.href='#blog5';">
                         <div class="blog__page1"></div>
                         <div class="blog__page2">
                             <h2 class="blog__cover__title">Title 5</h1>
@@ -496,7 +496,7 @@
                         <div class="blog__date">2022</div>
                         <div class="blog__tags">Tech</div>
                     </div>
-                    <div class="blog__cover">
+                    <div class="blog__cover" onclick="location.href='#blog6';">
                         <div class="blog__page1"></div>
                         <div class="blog__page2">
                             <h2 class="blog__cover__title">Title 6</h1>
@@ -515,7 +515,18 @@
                     <a href="#blogwebsite">Check out more articles by visiting my blog website!</a>
                 </div>
             </section>
-            <script src="blog/blog.js"></script>
+            <script>
+                /*==================== BLOG SCROLL REVEAL ====================*/
+                
+                // sr.reveal(".home__content", {origin: "top"})
+                // sr.reveal(".home__social", {delay: 500})
+                // sr.reveal(".social__coming", {delay: 500})
+                // sr.reveal(".contact__container", {delay: 400})
+                // sr.reveal(".learning")
+            </script>
+            <script src="blog/blog.js">
+                
+            </script>
             <!--==================== PROJECTS ====================-->
             <section class="projects section" id="projects">
                 <div class="intro__bg">
@@ -899,6 +910,7 @@
                                     <a href="https://stackoverflow.com/questions/10765755/how-to-apply-multiple-transforms-in-css" target="_blank" class="source">https://stackoverflow.com/questions/10765755/how-to-apply-multiple-transforms-in-css</a>
                                 </li>
                             </ul>  
+                            <a href="assets/sources/refrences.html" target="_blank" class="refrences__button">MORE!</a>
                             <div class="modal__close2 close-modal" title="Close">
                                 <i class="uil uil-times"></i>
                             </div> 

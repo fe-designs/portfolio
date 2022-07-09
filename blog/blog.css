@@ -150,3 +150,16 @@
 .blog__footer:hover {
     transform: scale(120%);
 }
+
+
+@media screen and (max-width: 600px) {
+    .blog__covers {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    .blog__covers {
+        grid-template-columns: 1fr 1fr;
+    }
+}

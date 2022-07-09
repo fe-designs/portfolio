@@ -2,6 +2,15 @@ const blogCover = document.querySelectorAll('.blog__cover')
 const blogCovers = document.querySelector('.blog__covers')
 const blogReturnBtn = document.querySelector('.blog__return__button')
 let i = 1;
+let y = 200;
+let sr1 = ScrollReveal({
+    duration: 2000,
+    distance: "80px",
+})
+for (cover of blogCover) {
+    sr1.reveal(cover, {delay: y})
+    y += 200;
+}
 blogCover.forEach(c => c.id = 'blog' + i++)
 blogCover.forEach(c => c.addEventListener('click', function() {
     openBlog(c.id)

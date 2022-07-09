@@ -1072,6 +1072,11 @@ color: #fff;
     padding: 1rem;
 }
 
+.refrences__button {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 600px){
